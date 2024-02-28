@@ -1,5 +1,5 @@
 
-FROM node:16
+FROM node:18
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -13,8 +13,8 @@ RUN npm install
 # Copy all files
 COPY . .
 
-# Expose port 3000
-EXPOSE 3000
+# Expose port 8000
+EXPOSE 8000
 
 # Run app
 CMD [ "node", "app.js" ]
