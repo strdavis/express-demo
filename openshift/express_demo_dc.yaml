@@ -49,6 +49,8 @@ objects:
                 key: testVar1
           - name: TEST_VAR_2
             value: ${TEST_VAR_2}
+          - name: TEST_VAR_3
+            value: ${TEST_VAR_3}
           image: ${NAME}-api:${TAG}
           livenessProbe:
             failureThreshold: 3
